@@ -1049,7 +1049,7 @@
 <div
     x-data="{
         activeImage: 0,
-        amountOfImages: 10,
+        amountOfImages: 7,
         next() {
             if (this.activeImage < this.amountOfImages - 1)
                 this.activeImage ++;
@@ -1133,69 +1133,6 @@
                 <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
                     <button @click="activeImage = 3; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
-                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/f15e7cef-0051-4a90-a3b1-5ed37add77a3.jpeg" alt="" /> -->
-                             
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/f15e7cef-0051-4a90-a3b1-5ed37add77a3.jpeg" alt="Hardscaping for Poarch Creek Landscaping in Santa Rosa Beach, Fl" loading="lazy"/> 
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/f15e7cef-0051-4a90-a3b1-5ed37add77a3.jpeg" alt="" /> -->
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/f15e7cef-0051-4a90-a3b1-5ed37add77a3.jpeg" alt="" /> -->
-                            
-                        </div>
-
-                        <div class="space-y-1 text-lg font-medium leading-6">
-                            <p class="line-clamp-3"></p>
-                            <h3 class="text-primary"></h3>
-                        </div>
-                    </button>
-                </div>
-            </li>
-        
-            <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
-            <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
-                <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
-                    <button @click="activeImage = 4; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
-                        <div class="aspect-w-3 aspect-h-2">
-                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/3916ec9a-fd84-40d0-b91e-0d7d15d759fe.png" alt="" /> -->
-                             
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/3916ec9a-fd84-40d0-b91e-0d7d15d759fe.png" alt="Hardscaping for Poarch Creek Landscaping in Santa Rosa Beach, Fl" loading="lazy"/> 
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/3916ec9a-fd84-40d0-b91e-0d7d15d759fe.png" alt="" /> -->
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/3916ec9a-fd84-40d0-b91e-0d7d15d759fe.png" alt="" /> -->
-                            
-                        </div>
-
-                        <div class="space-y-1 text-lg font-medium leading-6">
-                            <p class="line-clamp-3"></p>
-                            <h3 class="text-primary"></h3>
-                        </div>
-                    </button>
-                </div>
-            </li>
-        
-            <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
-            <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
-                <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
-                    <button @click="activeImage = 5; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
-                        <div class="aspect-w-3 aspect-h-2">
-                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/6d47afe5-d08d-4f49-b35d-df6acb5a57fb.png" alt="" /> -->
-                             
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/6d47afe5-d08d-4f49-b35d-df6acb5a57fb.png" alt="Hardscaping for Poarch Creek Landscaping in Santa Rosa Beach, Fl" loading="lazy"/> 
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/6d47afe5-d08d-4f49-b35d-df6acb5a57fb.png" alt="" /> -->
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/6d47afe5-d08d-4f49-b35d-df6acb5a57fb.png" alt="" /> -->
-                            
-                        </div>
-
-                        <div class="space-y-1 text-lg font-medium leading-6">
-                            <p class="line-clamp-3"></p>
-                            <h3 class="text-primary"></h3>
-                        </div>
-                    </button>
-                </div>
-            </li>
-        
-            <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
-            <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
-                <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
-                    <button @click="activeImage = 6; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
-                        <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/b4294db7-9ace-4d57-929c-75277e9be177.jpeg" alt="" /> -->
                              
                                 <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/b4294db7-9ace-4d57-929c-75277e9be177.jpeg" alt="Hardscaping for Poarch Creek Landscaping in Santa Rosa Beach, Fl" loading="lazy"/> 
@@ -1215,7 +1152,7 @@
             <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
             <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
                 <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
-                    <button @click="activeImage = 7; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
+                    <button @click="activeImage = 4; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/54623a4f-8ab1-48c2-b53b-368f4c67423f.jpeg" alt="" /> -->
                              
@@ -1236,7 +1173,7 @@
             <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
             <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
                 <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
-                    <button @click="activeImage = 8; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
+                    <button @click="activeImage = 5; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/d64e4cd2-1a10-4d7b-9ae2-7a729f421f80.jpeg" alt="" /> -->
                              
@@ -1257,7 +1194,7 @@
             <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
             <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
                 <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
-                    <button @click="activeImage = 9; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
+                    <button @click="activeImage = 6; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/c9d54bfe-1458-4e17-b3df-8acaeb46dcac.jpeg" alt="" /> -->
                              
@@ -1350,7 +1287,7 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 3">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/f15e7cef-0051-4a90-a3b1-5ed37add77a3.jpeg" alt="Hardscaping for Poarch Creek Landscaping in Santa Rosa Beach, Fl" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/b4294db7-9ace-4d57-929c-75277e9be177.jpeg" alt="Hardscaping for Poarch Creek Landscaping in Santa Rosa Beach, Fl" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -1358,7 +1295,7 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 4">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/3916ec9a-fd84-40d0-b91e-0d7d15d759fe.png" alt="Hardscaping for Poarch Creek Landscaping in Santa Rosa Beach, Fl" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/54623a4f-8ab1-48c2-b53b-368f4c67423f.jpeg" alt="Hardscaping for Poarch Creek Landscaping in Santa Rosa Beach, Fl" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -1366,37 +1303,13 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 5">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/6d47afe5-d08d-4f49-b35d-df6acb5a57fb.png" alt="Hardscaping for Poarch Creek Landscaping in Santa Rosa Beach, Fl" loading="lazy"/>
-                                            <p lorem="1" class="mt-3 text-gray-500"></p>
-                                        
-                                    </li>
-                                
-                                    <!-- Transition Wrapper 1 -->
-                                    <li class="flex flex-col" x-show="activeImage === 6">
-                                            
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/b4294db7-9ace-4d57-929c-75277e9be177.jpeg" alt="Hardscaping for Poarch Creek Landscaping in Santa Rosa Beach, Fl" loading="lazy"/>
-                                            <p lorem="1" class="mt-3 text-gray-500"></p>
-                                        
-                                    </li>
-                                
-                                    <!-- Transition Wrapper 1 -->
-                                    <li class="flex flex-col" x-show="activeImage === 7">
-                                            
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/54623a4f-8ab1-48c2-b53b-368f4c67423f.jpeg" alt="Hardscaping for Poarch Creek Landscaping in Santa Rosa Beach, Fl" loading="lazy"/>
-                                            <p lorem="1" class="mt-3 text-gray-500"></p>
-                                        
-                                    </li>
-                                
-                                    <!-- Transition Wrapper 1 -->
-                                    <li class="flex flex-col" x-show="activeImage === 8">
-                                            
                                             <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/d64e4cd2-1a10-4d7b-9ae2-7a729f421f80.jpeg" alt="Hardscaping for Poarch Creek Landscaping in Santa Rosa Beach, Fl" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
                                 
                                     <!-- Transition Wrapper 1 -->
-                                    <li class="flex flex-col" x-show="activeImage === 9">
+                                    <li class="flex flex-col" x-show="activeImage === 6">
                                             
                                             <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/c9d54bfe-1458-4e17-b3df-8acaeb46dcac.jpeg" alt="Hardscaping for Poarch Creek Landscaping in Santa Rosa Beach, Fl" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
@@ -1849,68 +1762,68 @@
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-218070"
-                                                    name="218070"
+                                                    id="contact-service-218120"
+                                                    name="218120"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Patio Design & Construction"
                                             />
-                                            <label for="contact-label-service-218070" class="ml-3 text-sm font-medium text-gray-700">Patio Design & Construction</label>
+                                            <label for="contact-label-service-218120" class="ml-3 text-sm font-medium text-gray-700">Patio Design & Construction</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-218071"
-                                                    name="218071"
+                                                    id="contact-service-218121"
+                                                    name="218121"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Driveway Design & Build"
                                             />
-                                            <label for="contact-label-service-218071" class="ml-3 text-sm font-medium text-gray-700">Driveway Design & Build</label>
+                                            <label for="contact-label-service-218121" class="ml-3 text-sm font-medium text-gray-700">Driveway Design & Build</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-218072"
-                                                    name="218072"
+                                                    id="contact-service-218122"
+                                                    name="218122"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Mowing"
                                             />
-                                            <label for="contact-label-service-218072" class="ml-3 text-sm font-medium text-gray-700">Mowing</label>
+                                            <label for="contact-label-service-218122" class="ml-3 text-sm font-medium text-gray-700">Mowing</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-218073"
-                                                    name="218073"
+                                                    id="contact-service-218123"
+                                                    name="218123"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Mulch Installation"
                                             />
-                                            <label for="contact-label-service-218073" class="ml-3 text-sm font-medium text-gray-700">Mulch Installation</label>
+                                            <label for="contact-label-service-218123" class="ml-3 text-sm font-medium text-gray-700">Mulch Installation</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-218074"
-                                                    name="218074"
+                                                    id="contact-service-218124"
+                                                    name="218124"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Shrub Trimming"
                                             />
-                                            <label for="contact-label-service-218074" class="ml-3 text-sm font-medium text-gray-700">Shrub Trimming</label>
+                                            <label for="contact-label-service-218124" class="ml-3 text-sm font-medium text-gray-700">Shrub Trimming</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-218075"
-                                                    name="218075"
+                                                    id="contact-service-218125"
+                                                    name="218125"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Fencing Repair & Installation"
                                             />
-                                            <label for="contact-label-service-218075" class="ml-3 text-sm font-medium text-gray-700">Fencing Repair & Installation</label>
+                                            <label for="contact-label-service-218125" class="ml-3 text-sm font-medium text-gray-700">Fencing Repair & Installation</label>
                                         </div>
                                         
                                     </div>
@@ -1941,68 +1854,68 @@
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-218070"
-                                                    name="218070"
+                                                    id="contact-service-218120"
+                                                    name="218120"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Patio Design & Construction"
                                             />
-                                            <label for="contact-label-service-218070" class="ml-3 text-sm font-medium text-gray-700">Patio Design & Construction</label>
+                                            <label for="contact-label-service-218120" class="ml-3 text-sm font-medium text-gray-700">Patio Design & Construction</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-218071"
-                                                    name="218071"
+                                                    id="contact-service-218121"
+                                                    name="218121"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Driveway Design & Build"
                                             />
-                                            <label for="contact-label-service-218071" class="ml-3 text-sm font-medium text-gray-700">Driveway Design & Build</label>
+                                            <label for="contact-label-service-218121" class="ml-3 text-sm font-medium text-gray-700">Driveway Design & Build</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-218072"
-                                                    name="218072"
+                                                    id="contact-service-218122"
+                                                    name="218122"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Mowing"
                                             />
-                                            <label for="contact-label-service-218072" class="ml-3 text-sm font-medium text-gray-700">Mowing</label>
+                                            <label for="contact-label-service-218122" class="ml-3 text-sm font-medium text-gray-700">Mowing</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-218073"
-                                                    name="218073"
+                                                    id="contact-service-218123"
+                                                    name="218123"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Mulch Installation"
                                             />
-                                            <label for="contact-label-service-218073" class="ml-3 text-sm font-medium text-gray-700">Mulch Installation</label>
+                                            <label for="contact-label-service-218123" class="ml-3 text-sm font-medium text-gray-700">Mulch Installation</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-218074"
-                                                    name="218074"
+                                                    id="contact-service-218124"
+                                                    name="218124"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Shrub Trimming"
                                             />
-                                            <label for="contact-label-service-218074" class="ml-3 text-sm font-medium text-gray-700">Shrub Trimming</label>
+                                            <label for="contact-label-service-218124" class="ml-3 text-sm font-medium text-gray-700">Shrub Trimming</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-218075"
-                                                    name="218075"
+                                                    id="contact-service-218125"
+                                                    name="218125"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Fencing Repair & Installation"
                                             />
-                                            <label for="contact-label-service-218075" class="ml-3 text-sm font-medium text-gray-700">Fencing Repair & Installation</label>
+                                            <label for="contact-label-service-218125" class="ml-3 text-sm font-medium text-gray-700">Fencing Repair & Installation</label>
                                         </div>
                                         
                                     </div>
