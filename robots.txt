@@ -1,1 +1,3 @@
-disallow: /index
+User-agent: *
+Disallow: 
+Sitemap: https://poarchcreeklandscaping.com/sitemap.xml
