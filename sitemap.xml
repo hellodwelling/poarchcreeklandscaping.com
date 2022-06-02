@@ -32,13 +32,6 @@
     </url>
 
     <url>
-        <loc>https://poarchcreeklandscaping.com/gallery-Landscaping</loc>
-        <lastmod>2022-06-02</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>1.0</priority>
-    </url>
-
-    <url>
         <loc>https://poarchcreeklandscaping.com/gallery-Hardscaping</loc>
         <lastmod>2022-06-02</lastmod>
         <changefreq>weekly</changefreq>
@@ -46,7 +39,21 @@
     </url>
 
     <url>
+        <loc>https://poarchcreeklandscaping.com/gallery-Landscaping</loc>
+        <lastmod>2022-06-02</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
         <loc>https://poarchcreeklandscaping.com/gallery-Videos</loc>
+        <lastmod>2022-06-02</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://poarchcreeklandscaping.com/service-Patio-Design-&-Construction</loc>
         <lastmod>2022-06-02</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
@@ -61,13 +68,6 @@
 
     <url>
         <loc>https://poarchcreeklandscaping.com/service-Mowing</loc>
-        <lastmod>2022-06-02</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>1.0</priority>
-    </url>
-
-    <url>
-        <loc>https://poarchcreeklandscaping.com/service-Patio-Design-&-Construction</loc>
         <lastmod>2022-06-02</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
