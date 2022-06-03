@@ -538,19 +538,19 @@
                                             <div class="relative grid gap-6 px-5 py-6 bg-white sm:gap-8 sm:p-8">
                                                   
                                                     <a
-                                                        href=" gallery-Hardscaping "
-                                                        role="menuitem"
-                                                        class="block p-3 -m-3 transition rounded-md  focus:outline-none focus:ring-2 ring-primary ring-opacity-75 ring-offset-2 hover:bg-gray-50"
-                                                    >
-                                                        <p class="mt-1 text-sm text-gray-500">Hardscaping</p>
-                                                    </a>
-                                                 
-                                                    <a
                                                         href=" gallery-Landscaping "
                                                         role="menuitem"
                                                         class="block p-3 -m-3 transition rounded-md  focus:outline-none focus:ring-2 ring-primary ring-opacity-75 ring-offset-2 hover:bg-gray-50"
                                                     >
                                                         <p class="mt-1 text-sm text-gray-500">Landscaping</p>
+                                                    </a>
+                                                 
+                                                    <a
+                                                        href=" gallery-Hardscaping "
+                                                        role="menuitem"
+                                                        class="block p-3 -m-3 transition rounded-md  focus:outline-none focus:ring-2 ring-primary ring-opacity-75 ring-offset-2 hover:bg-gray-50"
+                                                    >
+                                                        <p class="mt-1 text-sm text-gray-500">Hardscaping</p>
                                                     </a>
                                                  
                                                     <a
@@ -805,12 +805,12 @@
                                     >
                                         <div class="relative grid gap-6 px-5 py-2 bg-white rounded-lg">
                                             
-                                                <a href="gallery-Hardscaping" role="menuitem" class="block p-3 -m-3 transition rounded-md">
-                                                    <p class="mt-1 text-sm text-gray-500">Hardscaping</p>
-                                                </a>
-                                            
                                                 <a href="gallery-Landscaping" role="menuitem" class="block p-3 -m-3 transition rounded-md">
                                                     <p class="mt-1 text-sm text-gray-500">Landscaping</p>
+                                                </a>
+                                            
+                                                <a href="gallery-Hardscaping" role="menuitem" class="block p-3 -m-3 transition rounded-md">
+                                                    <p class="mt-1 text-sm text-gray-500">Hardscaping</p>
                                                 </a>
                                             
                                                 <a href="gallery-Videos" role="menuitem" class="block p-3 -m-3 transition rounded-md">
@@ -939,7 +939,7 @@
             <div
     x-data="{
         activeImage: 0,
-        amountOfImages: 0,
+        amountOfImages: 2,
         next() {
             if (this.activeImage < this.amountOfImages - 1)
                 this.activeImage ++;
@@ -954,6 +954,42 @@
     }"
 >
     <ul role="list" class="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-3 lg:gap-x-8">
+        
+            <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
+                <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
+                    <button @click="activeImage = 0; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
+                        <div class="aspect-w-3 aspect-h-2">
+                            
+                                <video preload="metadata" class="rounded shadow-md object-contain w-full h-60" loading="lazy" controls> <source src="https://landing-page-app-hero-images.s3.amazonaws.com/media/61a6d822-1eb4-4941-982e-95dacf748fea.quicktime#t=0.5" >
+                                </video>
+                            
+                        </div>
+
+                        <div class="space-y-1 text-lg font-medium leading-6">
+                            <p class="line-clamp-3"></p>
+                            <h3 class="text-primary"></h3>
+                        </div>
+                    </button>
+                </div>
+            </li>
+        
+            <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
+                <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
+                    <button @click="activeImage = 1; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
+                        <div class="aspect-w-3 aspect-h-2">
+                            
+                                <video preload="metadata" class="rounded shadow-md object-contain w-full h-60" loading="lazy" controls> <source src="https://landing-page-app-hero-images.s3.amazonaws.com/media/9d6cf7bf-8962-4b1e-921b-53fdc89a925a.quicktime#t=0.5" >
+                                </video>
+                            
+                        </div>
+
+                        <div class="space-y-1 text-lg font-medium leading-6">
+                            <p class="line-clamp-3"></p>
+                            <h3 class="text-primary"></h3>
+                        </div>
+                    </button>
+                </div>
+            </li>
         
     </ul>
 
@@ -997,6 +1033,22 @@
                             <span id="carousel-content-label" class="sr-only" hidden>Carousel</span>
 
                             <ul tabindex="0" role="listbox" aria-labelledby="carousel-content-label" class="relative w-full">
+                                
+                                    <li class="flex flex-col" x-show="activeImage === 0">
+                                        
+                                            <video preload="metadata" class="rounded shadow-md object-contain w-full h-60" loading="lazy" controls> <source src="https://landing-page-app-hero-images.s3.amazonaws.com/media/61a6d822-1eb4-4941-982e-95dacf748fea.quicktime#t=0.5" >
+                                            </video>
+                                            <p lorem="1" class="mt-3 text-gray-500"></p>
+                                        
+                                    </li>
+                                
+                                    <li class="flex flex-col" x-show="activeImage === 1">
+                                        
+                                            <video preload="metadata" class="rounded shadow-md object-contain w-full h-60" loading="lazy" controls> <source src="https://landing-page-app-hero-images.s3.amazonaws.com/media/9d6cf7bf-8962-4b1e-921b-53fdc89a925a.quicktime#t=0.5" >
+                                            </video>
+                                            <p lorem="1" class="mt-3 text-gray-500"></p>
+                                        
+                                    </li>
                                 
                             </ul>
 
@@ -1395,68 +1447,68 @@
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-224660"
-                                                    name="224660"
+                                                    id="contact-service-225436"
+                                                    name="225436"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Patio Design & Construction"
                                             />
-                                            <label for="contact-label-service-224660" class="ml-3 text-sm font-medium text-gray-700">Patio Design & Construction</label>
+                                            <label for="contact-label-service-225436" class="ml-3 text-sm font-medium text-gray-700">Patio Design & Construction</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-224661"
-                                                    name="224661"
+                                                    id="contact-service-225437"
+                                                    name="225437"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Driveway Design & Build"
                                             />
-                                            <label for="contact-label-service-224661" class="ml-3 text-sm font-medium text-gray-700">Driveway Design & Build</label>
+                                            <label for="contact-label-service-225437" class="ml-3 text-sm font-medium text-gray-700">Driveway Design & Build</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-224662"
-                                                    name="224662"
+                                                    id="contact-service-225438"
+                                                    name="225438"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Mowing"
                                             />
-                                            <label for="contact-label-service-224662" class="ml-3 text-sm font-medium text-gray-700">Mowing</label>
+                                            <label for="contact-label-service-225438" class="ml-3 text-sm font-medium text-gray-700">Mowing</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-224663"
-                                                    name="224663"
+                                                    id="contact-service-225439"
+                                                    name="225439"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Mulch Installation"
                                             />
-                                            <label for="contact-label-service-224663" class="ml-3 text-sm font-medium text-gray-700">Mulch Installation</label>
+                                            <label for="contact-label-service-225439" class="ml-3 text-sm font-medium text-gray-700">Mulch Installation</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-224664"
-                                                    name="224664"
+                                                    id="contact-service-225440"
+                                                    name="225440"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Shrub Trimming"
                                             />
-                                            <label for="contact-label-service-224664" class="ml-3 text-sm font-medium text-gray-700">Shrub Trimming</label>
+                                            <label for="contact-label-service-225440" class="ml-3 text-sm font-medium text-gray-700">Shrub Trimming</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-224665"
-                                                    name="224665"
+                                                    id="contact-service-225441"
+                                                    name="225441"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Fencing Repair & Installation"
                                             />
-                                            <label for="contact-label-service-224665" class="ml-3 text-sm font-medium text-gray-700">Fencing Repair & Installation</label>
+                                            <label for="contact-label-service-225441" class="ml-3 text-sm font-medium text-gray-700">Fencing Repair & Installation</label>
                                         </div>
                                         
                                     </div>
@@ -1485,68 +1537,68 @@
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-224660"
-                                                    name="224660"
+                                                    id="contact-service-225436"
+                                                    name="225436"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Patio Design & Construction"
                                             />
-                                            <label for="contact-label-service-224660" class="ml-3 text-sm font-medium text-gray-700">Patio Design & Construction</label>
+                                            <label for="contact-label-service-225436" class="ml-3 text-sm font-medium text-gray-700">Patio Design & Construction</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-224661"
-                                                    name="224661"
+                                                    id="contact-service-225437"
+                                                    name="225437"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Driveway Design & Build"
                                             />
-                                            <label for="contact-label-service-224661" class="ml-3 text-sm font-medium text-gray-700">Driveway Design & Build</label>
+                                            <label for="contact-label-service-225437" class="ml-3 text-sm font-medium text-gray-700">Driveway Design & Build</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-224662"
-                                                    name="224662"
+                                                    id="contact-service-225438"
+                                                    name="225438"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Mowing"
                                             />
-                                            <label for="contact-label-service-224662" class="ml-3 text-sm font-medium text-gray-700">Mowing</label>
+                                            <label for="contact-label-service-225438" class="ml-3 text-sm font-medium text-gray-700">Mowing</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-224663"
-                                                    name="224663"
+                                                    id="contact-service-225439"
+                                                    name="225439"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Mulch Installation"
                                             />
-                                            <label for="contact-label-service-224663" class="ml-3 text-sm font-medium text-gray-700">Mulch Installation</label>
+                                            <label for="contact-label-service-225439" class="ml-3 text-sm font-medium text-gray-700">Mulch Installation</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-224664"
-                                                    name="224664"
+                                                    id="contact-service-225440"
+                                                    name="225440"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Shrub Trimming"
                                             />
-                                            <label for="contact-label-service-224664" class="ml-3 text-sm font-medium text-gray-700">Shrub Trimming</label>
+                                            <label for="contact-label-service-225440" class="ml-3 text-sm font-medium text-gray-700">Shrub Trimming</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-224665"
-                                                    name="224665"
+                                                    id="contact-service-225441"
+                                                    name="225441"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Fencing Repair & Installation"
                                             />
-                                            <label for="contact-label-service-224665" class="ml-3 text-sm font-medium text-gray-700">Fencing Repair & Installation</label>
+                                            <label for="contact-label-service-225441" class="ml-3 text-sm font-medium text-gray-700">Fencing Repair & Installation</label>
                                         </div>
                                         
                                     </div>
